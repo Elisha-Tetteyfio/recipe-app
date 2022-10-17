@@ -1,50 +1,51 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Recipe App
 
-> Description the project.
+> The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Rails
+- Ruby
+- CSS
 
-## Live Demo (if available)
+## Live Demo (not available yet)
 
 [Live Demo Link](https://livedemo.com)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+- Ruby
+- Ruby on rails
 
 ### Setup
+- Open your terminal in the folder where you want to have the project and run `git clone https://github.com/Elisha-Tetteyfio/recipe-app` to clone the project.
+- Run `cd recipe-app` to move to the project directory.
 
 ### Install
+- Make sure to have installed POSTGRESQL
 
 ### Usage
+- Run `rails s` to start the app, then follow the given link provided in the console.
+- Run `rails c` to open an interactive ruby session
 
 ### Run tests
-
-### Deployment
-
-
+- Run `rspec`
 
 ## Authors
 
-👤 **Author1**
+👤 **Elisha Tetteyfio**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Elisha-Tetteyfio](https://github.com/Elisha-Tetteyfio)
+- Twitter: [Elisha](https://twitter.com/Nii_AlYasa)
+- LinkedIn: [Elisha Tetteyfio](https://linkedin.com/in/elisha-tetteyfio)
 
 👤 **Author2**
 
@@ -56,7 +57,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Elisha-Tetteyfio/recipe-app/issues).
 
 ## Show your support
 
