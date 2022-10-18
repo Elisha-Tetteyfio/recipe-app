@@ -11,8 +11,9 @@ Rails.application.routes.draw do
   resources :foods
   get '/users', to: 'users#new'
 
-  resources :recipes, only: [:index, :destroy, :new, :show]
-  resources :users
+  resources :users do
+    resources :recipes, only: [:index, :destroy, :new, :show]
+  end
   
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
