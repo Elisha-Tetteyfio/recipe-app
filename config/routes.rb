@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get '/users', to: 'users#new'
 
-  resources :recipes
+  resources :recipes, only: [:index, :destroy, :new, :show]
   resources :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
