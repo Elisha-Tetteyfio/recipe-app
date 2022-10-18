@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :foods
   get '/users', to: 'users#new'
 
   resources :recipes, only: [:index, :destroy, :new, :show]
