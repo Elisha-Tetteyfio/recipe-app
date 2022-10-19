@@ -5,13 +5,13 @@ Rails.application.routes.draw do
     get 'users/sign_out' => 'devise/sessions#destroy'
   end
 
-  root 'users#new'
+  root 'foods#index'
    
-  resources :foods [:index, :destroy, :new, :show]
+  resources :foods #[:index, :destroy, :new, :show]
   get '/users', to: 'foods#index'
 
   resources :users 
-  resources :recipe_foods [:index, :destroy, :new, :show]
+  resources :recipe_foods #[:index, :destroy, :new, :show]
   resources :recipes, only: [:index, :destroy, :new, :show]
   
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
