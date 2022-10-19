@@ -3,5 +3,5 @@ class Recipe < ApplicationRecord
   has_many :recipe_foods
 
   validates :name, :description, presence: true
-  validates :preparation_time, :cooking_time, numericality: true
+  validates :preparation_time, :cooking_time, numericality: { greater_than: 0 }
 end

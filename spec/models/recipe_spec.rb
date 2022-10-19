@@ -5,10 +5,10 @@ RSpec.describe Recipe, type: :model do
   subject { described_class.new }
   before :each do
     subject.user = user
-    subject.name = "Rice"
+    subject.name = 'Rice'
     subject.preparation_time = 5
     subject.cooking_time = 3.5
-    subject.description = "Boil it"
+    subject.description = 'Boil it'
   end
 
   it 'Expect the subject to be valid' do
@@ -20,11 +20,11 @@ RSpec.describe Recipe, type: :model do
     expect(subject).to_not be_valid
   end
   it 'Should have preparation time with numeric value' do
-    subject.preparation_time = "Five"
+    subject.preparation_time = 'Five'
     expect(subject).to_not be_valid
   end
   it 'Should have cooking time with numeric value' do
-    subject.cooking_time = "Five"
+    subject.cooking_time = 'Five'
     expect(subject).to_not be_valid
   end
   it 'Should have a description' do
