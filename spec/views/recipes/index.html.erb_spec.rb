@@ -21,5 +21,4 @@ RSpec.describe 'recipes/index', type: :view do
              )
            ])
   end
-
 end
