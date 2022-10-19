@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Recipe, type: :request do
   user = User.create(name: 'User1', email: 'a@com', password: 'qwerty')
-  
+
   subject { described_class.new }
   before :each do
     subject.user = user
@@ -13,7 +13,7 @@ RSpec.describe Recipe, type: :request do
     subject.save
     sign_in user
   end
-  
+
   it " '/recipes' should lead to the recipe index page" do
     get recipes_path
     expect(response).to render_template(:index)

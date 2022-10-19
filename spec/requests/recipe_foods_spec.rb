@@ -1,4 +1,4 @@
-require 'rails_helper'
+# require 'rails_helper'
 
-RSpec.describe '/recipe_foods', type: :request do
-end
+# RSpec.describe '/recipe_foods', type: :request do
+# end
