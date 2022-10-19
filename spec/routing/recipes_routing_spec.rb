@@ -14,6 +14,10 @@ RSpec.describe RecipesController, type: :routing do
       expect(get: '/recipes/1').to route_to('recipes#show', id: '1')
     end
 
+    it 'routes to #create' do
+      expect(post: '/recipes').to route_to('recipes#create')
+    end
+
     it 'routes to #destroy' do
       expect(delete: '/recipes/1').to route_to('recipes#destroy', id: '1')
     end
