@@ -7,5 +7,4 @@ class User < ApplicationRecord
   has_many :foods
 
   ROLES = %i[admin default].freeze
-
 end
