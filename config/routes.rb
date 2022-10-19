@@ -7,13 +7,12 @@ Rails.application.routes.draw do
 
   root 'users#new'
    
-  resources :recipe_foods
-  resources :foods
-  get '/users', to: 'users#new'
+  resources :foods [:index, :destroy, :new, :show]
+  get '/users', to: 'foods#index'
 
-  resources :users do
-    resources :recipes, only: [:index, :destroy, :new, :show]
-  end
+  resources :users 
+  resources :recipe_foods [:index, :destroy, :new, :show]
+  resources :recipes, only: [:index, :destroy, :new, :show]
   
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
