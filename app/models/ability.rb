@@ -5,12 +5,8 @@ class Ability
     user ||= User.new
     can :read, :all
 
-    if user.role == 'admin'
-      can :manage, :all
-    else
-      can :manage, Food, user_id: user.id
-      can :read, Recipe, public: true
-      can :manage, Recipe, user_id: user.id
-    end
+    can :manage, Food, user_id: user.id
+    can :read, Recipe, public: true
+    can :manage, Recipe, user_id: user.id
   end
 end
