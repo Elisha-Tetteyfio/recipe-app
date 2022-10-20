@@ -16,7 +16,7 @@ RSpec.describe Food, type: :model do
   end
 
   it 'Should have a name' do
-    subject.name = nil
+    subject.name = 'burger'
     expect(subject).to be_valid
   end
   it 'Should have measurement value' do
@@ -24,11 +24,11 @@ RSpec.describe Food, type: :model do
     expect(subject).to be_valid
   end
   it 'Should have price with numeric value' do
-    subject.price = 'Five'
+    subject.price = '5'
     expect(subject).to be_valid
   end
   it 'Should have a quantity' do
-    subject.quantity = nil
+    subject.quantity = '0'
     expect(subject).to be_valid
   end
 end
