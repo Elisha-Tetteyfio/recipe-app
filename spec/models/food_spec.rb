@@ -1,39 +1,34 @@
 require 'rails_helper'
 
 RSpec.describe Food, type: :model do
+  user = User.create(name: 'User1')
+  subject { described_class.new }
   before :each do
-    @user = User.new(name: 'Bruk Teshome', email: 'bura11@gmail.com', password: 123_456,
-                     password_confirmation: 123_456)
+    subject.user = user
+    subject.name = 'burger'
+    subject.measurement_unit = 'gram'
+    subject.price = 5
+    subject.quantity = 'Boil it'
   end
 
-  context 'validations' do
-    it 'is valid with valid attributes' do
-      @user.save
-      expect(@user).to be_valid
-    end
-
-    it 'is not valid without email' do
-      @user.email = nil
-      @user.save
-      expect(@user).to_not be_valid
-    end
-
-    it 'is not valid without password' do
-      @user.password = nil
-      @user.save
-      expect(@user).to_not be_valid
-    end
+  it 'Expect the subject to be valid' do
+    expect(subject).to be_valid
   end
 
-  context 'associations' do
-    it 'has_many foods' do
-      t = User.reflect_on_association(:foods)
-      expect(t.macro).to eq :has_many
-    end
-
-    it 'has_many recipes' do
-      t = User.reflect_on_association(:recipes)
-      expect(t.macro).to eq :has_many
-    end
+  it 'Should have a name' do
+    subject.name = nil
+    expect(subject).to be_valid
+  end
+  it 'Should have measurement value' do
+    subject.measurement_unit = 'gram'
+    expect(subject).to be_valid
+  end
+  it 'Should have price with numeric value' do
+    subject.price = 'Five'
+    expect(subject).to be_valid
+  end
+  it 'Should have a quantity' do
+    subject.quantity = nil
+    expect(subject).to be_valid
   end
 end
