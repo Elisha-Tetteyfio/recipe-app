@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'public_recipes/index'
+  get 'public_recipes/show'
   devise_for :users
 
   devise_scope  :user do
