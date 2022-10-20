@@ -1,9 +1,22 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @recipe %>
+<div class="container w-75">
+  <h2 class="text-center">
+    <%= @recipe.name %>
+  </h2>
+  <p>
+    <strong>Preparation time:
+      <%= @recipe.preparation_time %>
+    </strong>
+  </p>
+  <p>
+    <strong>Cooking time:
+      <%= @recipe.cooking_time %>
+    </strong>
+  </p>
+  <p>
+    <strong>Steps go here ... </strong>
+  </p>
+  <%#= render @recipe %>
 
-<div>
-  <%= link_to "Back to recipes", recipes_path %>
-
-  <%= button_to "Destroy this recipe", @recipe, method: :delete %>
 </div>
