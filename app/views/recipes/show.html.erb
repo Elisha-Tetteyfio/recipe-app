@@ -17,6 +17,9 @@
   <p>
     <strong>Steps go here ... </strong>
   </p>
-  <%#= render @recipe %>
+
+  <% if can? :manage, @recipe %>
+    <%= link_to "Add new food", new_food_path %>
+  <% end %>
 
 </div>
