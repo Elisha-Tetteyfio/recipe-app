@@ -7,9 +7,9 @@
 
 ## Built With
 
-- Rails
-- Ruby
-- CSS
+- Major: Ruby, HTML,CSS
+- Frameworks: Rails
+- Technologies: Git, Gitflow, Linters, Github, PostgreSql
 
 ## Live Demo (not available yet)
 
@@ -22,8 +22,13 @@
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-- Ruby
-- Ruby on rails
+- Have a computer and internet connection
+- Have Ruby installed on your computer
+- Have Rails installed on your computer
+- Have a basic knowledge of Ruby and OOP concept
+- Have a basic knowledge of Rails
+- Have a general understanding of what testing is
+- Have visual-studio code or any other code editor installed on your computer.
 
 ### Setup
 - Open your terminal in the folder where you want to have the project and run `git clone https://github.com/Elisha-Tetteyfio/recipe-app` to clone the project.
@@ -47,11 +52,11 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [Elisha](https://twitter.com/Nii_AlYasa)
 - LinkedIn: [Elisha Tetteyfio](https://linkedin.com/in/elisha-tetteyfio)
 
-👤 **Author2**
+👤 **Bruk Teshome**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/bruk19)
+- Twitter: [@twitterhandle](https://twitter.com/Bruktesh)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/bruk-teshome-ab4325226)
 
 ## 🤝 Contributing
 
